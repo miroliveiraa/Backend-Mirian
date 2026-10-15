@@ -11,6 +11,7 @@ public class Cadastro{
     public Cadastro (String username, String nascimento, String email){
         this.username = username;
         this.email = email;
+        this.nascimento = nascimento;
     }
 
     public boolean validarUsername() {
@@ -32,7 +33,7 @@ public class Cadastro{
 
         if (partes.length != 3) {
             throw new IllegalArgumentException(
-                    "Formato inválido! Utilize dd.mm.aaaa."
+                    "Data de nascimento inválida! Utilize dd.mm.aaaa."
             );
         }
 
@@ -57,6 +58,24 @@ public class Cadastro{
         if (dia < 1 || dia > 31) {
             throw new IllegalArgumentException("Dia inválido!");
         }
+
+
+    }
+
+    private void verificarMaioridade() {
+        String[] partes = this.nascimento.split("\\.");
+
+        int dia = Integer.parseInt(partes[0]);
+        int mes = Integer.parseInt(partes[1]);
+        int ano = Integer.parseInt(partes[2]);
+
+        java.time.LocalDate nascimento = java.time.LocalDate.of(ano, mes, dia);
+
+        java.time.LocalDate hoje = java.time.LocalDate.now();
+
+        if(nascimento.plusYears(18).isAfter(hoje)){
+            throw new IllegalArgumentException("O usuário precisa ter pelo menos 18 anos!");
+        }
     }
 
 
@@ -65,7 +84,9 @@ public class Cadastro{
     public void validarCadastro(){
         validarUsername();
         validarEmail();
-        validarNascimento();
+        validarNascimento(this.nascimento);
+        verificarMaioridade();
+
     }
 
 
