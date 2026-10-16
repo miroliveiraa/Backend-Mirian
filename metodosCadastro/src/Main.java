@@ -6,6 +6,7 @@ public class Main{
 
         Metodos novoCad = new Metodos();
         novoCad.Cadastrar(sc);
+        novoCad.Listar();
 
         sc.close();
 

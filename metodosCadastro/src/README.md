@@ -12,5 +12,10 @@ cujo são as variáveis referente aos dados que utilizaremos para o cadastro. A 
 o Construtor, porém, como gostaria que o método cadastro que fizesse a coleta e inserção dos dados nos
 atributos, deixei ele vazio.
 
-Dessa forma, iniciei a criação do método cadastrar(), onde imprimi a requisição dos dados e com o 
-Scanner atribui eles a variáveis.
+### passo 2 → Método Cadastrar()
+
+O método cadastrar() contém a requisição dos dados e atribuição com o Scanner as variáveis correspondentes.
+
+### passo 3 → Método Listar()
+
+Apenas impressão dos dados coletados.
