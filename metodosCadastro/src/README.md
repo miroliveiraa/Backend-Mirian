@@ -19,3 +19,7 @@ O método cadastrar() contém a requisição dos dados e atribuição com o Scan
 ### passo 3 → Método Listar()
 
 Apenas impressão dos dados coletados.
+
+### passo 4 → Método Deletar()
+
+Atribuição das variáveis a nulo.

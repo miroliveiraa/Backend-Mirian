@@ -33,5 +33,12 @@ public class Metodos {
         System.out.println("Senha: "+ senha);
     }
 
+    public void Deletar(){
+        this.username = null;
+        this.email = null;
+        this.senha = null;
+        this.confSenha = null;
+    }
+
 
 }
