@@ -1,5 +1,8 @@
 # Objetivos:
+
 → Criar os seguintes métodos: cadastrar, listar e deletar para usar em um sistema de cadastro.
+
+→ Adicionar métodos de Validação e inicializar o programa com um Menu
 
 ## Resolução:
 
@@ -23,3 +26,4 @@ Apenas impressão dos dados coletados.
 ### passo 4 → Método Deletar()
 
 Atribuição das variáveis a nulo.
+
