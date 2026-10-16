@@ -18,6 +18,9 @@ public class Cadastro{
         if (this.username == null || this.username.trim().isEmpty()) {
             throw new IllegalArgumentException("Nome de usuário inválido!");
         }
+        else if (this.username.length() <= 3){
+            throw new IllegalArgumentException("O nome de usuário deve conter mais de 3 caracteres!");
+        }
         return true;
     }
 

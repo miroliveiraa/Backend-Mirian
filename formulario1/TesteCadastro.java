@@ -20,7 +20,7 @@ public class TesteCadastro{
         try {
             cadastro.validarCadastro();
 
-            System.out.println("\nCadastro validado com sucesso!");
+            System.out.println("\nCadastro efetuado com sucesso!");
 
         } catch (IllegalArgumentException e) {
             System.out.println("\nErro no cadastro: " + e.getMessage());
