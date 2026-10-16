@@ -7,8 +7,6 @@ public class Main{
         Metodos novoCad = new Metodos();
         novoCad.Cadastrar(sc);
         novoCad.Listar();
-        novoCad.Deletar();
-        novoCad.Listar();
 
         sc.close();
     }

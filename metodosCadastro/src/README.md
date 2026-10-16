@@ -27,3 +27,42 @@ Apenas impressão dos dados coletados.
 
 Atribuição das variáveis a nulo.
 
+### passo 5 → Método de Validação do cadastro.
+
+```bash
+Requisitos: impedir que um usuário cadastre-se com algum campo vazio, com um email sem @,
+com o nome de usuário com menos de 3 caracteres, com senha e confirmar senha diferentes.
+```
+```bash
+Extra: fazer a verificação todas as vezes em que o usuário digitar a tecla Enter para
+mudar de campo.
+```
+
+#### Campos Vazios (Strings):
+
+<table>
+    <thead>
+        <tr>
+            <th>Método</th>
+            <th>O que faz</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>.isEmpty()</code></td>
+            <td>Verifica se a string tem comprimento zero.</td>
+        </tr>
+        <tr>
+            <td><code>.isBlank()</code></td>
+            <td>Verifica se a string está vazia ou contém apenas espaços em branco.</td>
+        </tr>
+        <tr>
+            <td><code>.trim()</code></td>
+            <td>Remove espaços das extremidades.</td>
+        </tr>
+        <tr>
+            <td><code>.strip()</code></td>
+            <td>Remove espaços em branco Unicode das extremidades.</td>
+        </tr>
+    </tbody>
+</table>

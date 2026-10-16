@@ -13,14 +13,22 @@ public class Metodos {
         System.out.println("Digite um nome de usuário: ");
         this.username = sc.nextLine();
 
+        validarCadastro();
+
         System.out.println("Digite seu email: ");
         this.email = sc.nextLine();
+
+        validarCadastro();
 
         System.out.println("Digite sua senha: ");
         this.senha = sc.nextLine();
 
+        validarCadastro();
+
         System.out.println("Confirmar senha: ");
         this.confSenha = sc.nextLine();
+
+        validarCadastro();
 
         System.out.println("Cadastro efetuado com sucesso!");
 
@@ -40,6 +48,31 @@ public class Metodos {
         this.confSenha = null;
     }
 
+    public void validarCadastro(){
+        String[] campos = {username, email, senha, confSenha};
+
+        for (String campo : campos) {
+            if (campo == null || campo.isBlank()) {
+                throw new IllegalArgumentException("Campo Inválido!");
+
+            }
+
+
+        }
+
+
+    }
+
+    public void tenteValidar(){
+        try {
+            validarCadastro();
+            System.out.println("\nCadastro efetuado com sucesso!");
+
+        } catch (IllegalArgumentException e) {
+            System.out.println("\nErro no cadastro: " + e.getMessage());
+        }
+
+    }
 
 
 }
