@@ -1,5 +1,11 @@
 # Estudo de Pilhas
 
+## Objetivos: 
+Entender o que é e como usar pilhas na programação. Implementar métodos em java para a pilha estática 
+e posteriormente, pilha encadeada
+
+## O que é Pilha:
+
 
 Uma pilha é uma coleção de elementos na qual todas as inserções e remoções acontecem em uma única 
 extremidade, chamada topo.
@@ -69,9 +75,9 @@ para verificar isso, então, usaremos se a variável topo é igual a 'this.valor
 o tamanho do vetor valores -1. O motivo do -1 é que topo, por começar em 0, sempre estará em uma 
 posição a menos que seu valor. 
 
-Se essa afirmação for verdade, lançamos uma exceção "Pilha estourou!", que representa que não dá 
-para inserir nenhum valor na pilha mais. Se não, o valor é inserido na posição topo + 1, ou, como 
-no código, ++this.topo.
+Se essa afirmação for verdade, lançamos uma exceção "Pilha estourou!"(overflow), que representa que
+não dá para inserir nenhum valor na pilha mais. Se não, o valor é inserido na posição topo + 1, ou, 
+como no código, ++this.topo.
 
 ### Método imprimir():
 
@@ -84,6 +90,20 @@ vai incrementando enquanto ser menor ou igual a topo, durante o percorrimento, o
 
 Tipo int, pois retorna o valor de topo ao desempilhar. É verificado se a pilha está vazia, e se o 
 método identificar como falso, retorna o valor de topo--, ou topo-1.
+
+### Método topo():
+
+Tipo int, pois retorna o valor de topo. Verifica se a pilha está vazia, caso não, retorna o valor 
+de topo.
+
+### Execução (Main)
+
+No arquivo Main é onde é criado o objeto (a pilha p) e testado os métodos criados em PilhaEstatica.
+
+## Próximos passos:
+
+- Implementar os métodos, ***estaCheia()*** e ***obterTamanho()***.
+- Fazer o mesmo processo com a pilha encadeada.
 
 
 

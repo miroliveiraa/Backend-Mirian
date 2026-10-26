@@ -23,8 +23,11 @@ public class PilhaEstatica {
         if(isVazia()){
             System.out.println("A pilha está vazia!");
         }
-        for(int i=0; i<=this.topo; i++) {
-            System.out.println(this.valores[i]);
+        else {
+            System.out.println("Pilha: ");
+            for (int i = this.topo; i > -1; i--) {
+                System.out.println(this.valores[i]);
+            }
         }
     }
 
