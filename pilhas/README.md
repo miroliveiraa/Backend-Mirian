@@ -73,5 +73,12 @@ Se essa afirmação for verdade, lançamos uma exceção "Pilha estourou!", que 
 para inserir nenhum valor na pilha mais. Se não, o valor é inserido na posição topo + 1, ou, como 
 no código, ++this.topo.
 
+### Método imprimir():
+
+Tipo void, não retorna nada. Faz a verificação se a pilha está vazia, se sim, imprime essa informação
+na tela, se não, entra em um for onde percorre todos os elementos a partir da primeira posição (0) e 
+vai incrementando enquanto ser menor ou igual a topo, durante o percorrimento, o valor nessa posição
+é impresso na tela com um 'println'.
+
 
 
