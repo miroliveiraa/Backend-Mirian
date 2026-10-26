@@ -5,6 +5,9 @@ public class Metodos {
     private String email;
     private String senha;
     private String confSenha;
+    public int indice;
+    public String[] campos = {username, email, senha, confSenha};
+
 
     public Metodos() {}
 
@@ -13,22 +16,20 @@ public class Metodos {
         System.out.println("Digite um nome de usuário: ");
         this.username = sc.nextLine();
 
-        validarCadastro();
 
         System.out.println("Digite seu email: ");
         this.email = sc.nextLine();
 
-        validarCadastro();
 
         System.out.println("Digite sua senha: ");
         this.senha = sc.nextLine();
 
-        validarCadastro();
+
 
         System.out.println("Confirmar senha: ");
         this.confSenha = sc.nextLine();
 
-        validarCadastro();
+
 
         System.out.println("Cadastro efetuado com sucesso!");
 
@@ -49,18 +50,20 @@ public class Metodos {
     }
 
     public void validarCadastro(){
-        String[] campos = {username, email, senha, confSenha};
-
-        for (String campo : campos) {
-            if (campo == null || campo.isBlank()) {
-                throw new IllegalArgumentException("Campo Inválido!");
-
-            }
 
 
+
+    }
+
+    public boolean validarCampo(int indice){
+        return campos[indice] != null && !campos[indice].isBlank();
+    }
+
+    public boolean validarUsername(){
+        if (this.username.length() <= 3){
+            throw new IllegalArgumentException("O nome de usuário deve conter mais de 3 caracteres!");
         }
-
-
+        return true;
     }
 
     public void tenteValidar(){

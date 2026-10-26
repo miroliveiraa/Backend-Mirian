@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Backend-Mirian.iml" filepath="$PROJECT_DIR$/Backend-Mirian.iml" />
       <module fileurl="file://$PROJECT_DIR$/metodosCadastro/metodosCadastro.iml" filepath="$PROJECT_DIR$/metodosCadastro/metodosCadastro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pilhas/pilhas.iml" filepath="$PROJECT_DIR$/pilhas/pilhas.iml" />
     </modules>
   </component>
 </project>
