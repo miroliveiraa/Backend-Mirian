@@ -53,20 +53,20 @@ métodos. Sendo eles, respectivamente: o 'Main' e  o 'PilhaEstatica'.
 Iniciamos no PilhaEstatica com a inserção do vetor valores, que representa a pilha, e do topo, que 
 é a extremidade usada para acessar os dados.
 
-### Método Construtor
+### 1.1 - Método Construtor:
 
 Inserimos o método especial construtor, definindo a variável topo como -1. Isso se dá porque 
 variável topo é, na verdade, uma variável que armazena as posições dos elementos, porém só acessamos 
 o topo, logo, armazena a posição do topo especificamente, começando da posição 0 por padrão. Porém, 
 como a pilha ainda não foi criada, então a posição de seu topo é = -1. 
 
-### Método isVazia():
+### 1.2 - Método isVazia():
 
 Observando esse fato, o segundo método criado foi o isVazia(), é um método do tipo booleano para 
 facilitar os if's de verificação dos outros métodos, ele retorna se a afirmação 'variável topo
 = -1' é verdadeira ou falsa.
 
-### Método empilhar():
+### 1.3 - Método empilhar():
 
 O método empilhar é do tipo void, pois não há necessidade de se retornar nada, apenas inserir o 
 novo elemento na pilha, com parâmetro 'int valor', para receber o valor que é desejado inserir. 
@@ -79,24 +79,24 @@ Se essa afirmação for verdade, lançamos uma exceção "Pilha estourou!"(overf
 não dá para inserir nenhum valor na pilha mais. Se não, o valor é inserido na posição topo + 1, ou, 
 como no código, ++this.topo.
 
-### Método imprimir():
+### 1.4 - Método imprimir():
 
 Tipo void, não retorna nada. Faz a verificação se a pilha está vazia, se sim, imprime essa informação
 na tela, se não, entra em um for onde percorre todos os elementos a partir da primeira posição (0) e 
 vai incrementando enquanto ser menor ou igual a topo, durante o percorrimento, o valor nessa posição
 é impresso na tela com um 'println'.
 
-### Método desempilhar():
+### 1.5 - Método desempilhar():
 
 Tipo int, pois retorna o valor de topo ao desempilhar. É verificado se a pilha está vazia, e se o 
 método identificar como falso, retorna o valor de topo--, ou topo-1.
 
-### Método topo():
+### 1.6 - Método topo():
 
 Tipo int, pois retorna o valor de topo. Verifica se a pilha está vazia, caso não, retorna o valor 
 de topo.
 
-### Execução (Main)
+### 1.7 - Execução (Main)
 
 No arquivo Main é onde é criado o objeto (a pilha p) e testado os métodos criados em PilhaEstatica.
 
