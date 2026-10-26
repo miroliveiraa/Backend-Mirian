@@ -80,5 +80,10 @@ na tela, se não, entra em um for onde percorre todos os elementos a partir da p
 vai incrementando enquanto ser menor ou igual a topo, durante o percorrimento, o valor nessa posição
 é impresso na tela com um 'println'.
 
+### Método desempilhar():
+
+Tipo int, pois retorna o valor de topo ao desempilhar. É verificado se a pilha está vazia, e se o 
+método identificar como falso, retorna o valor de topo--, ou topo-1.
+
 
 
