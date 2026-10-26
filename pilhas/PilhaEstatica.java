@@ -1,6 +1,6 @@
 
 public class PilhaEstatica {
-    int[] valores; 
+    int[] valores;
     int topo;
 
     public PilhaEstatica(){
